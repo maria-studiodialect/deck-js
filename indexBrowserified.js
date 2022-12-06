@@ -117,6 +117,7 @@ player.on(FS_SDK_EVENTS_NAME.ON_SDK_MESSAGE, function (data) {
 // Bind application install progress
 player.on(FS_SDK_EVENTS_NAME.ON_APP_INSTALL_PROGRESS, function (value) {
   console.log("SDK client FIRED: App install progress", value);
+  document.getElementById('loading').innerHTML = value;
 });
 
 // Bind application install success
@@ -138,7 +139,6 @@ player.on(FS_SDK_EVENTS_NAME.ON_APP_START, function () {
 player.on(FS_SDK_EVENTS_NAME.ON_STREAM_START, function () {
   console.log("SDK client FIRED: Stream start");
   document.getElementById('above-container').style.display = 'none';
-  console.log('container-remove')
 });
 
 // Bind user active
