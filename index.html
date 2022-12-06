@@ -6,30 +6,50 @@
   content="default-src 'self' 'unsafe-inline'; img-src https://* https://images.unsplash.com ; frame-src *; style-src * 'unsafe-inline';" />
   </head>
   <style>
+    body {
+      background-color: black;
+    }
     .main-container {
-      max-width: 1200px;
+      max-width: 100vw;
       padding: 20px;
-      margin: 0 auto;
+      margin: 10vh auto;
       position: relative;
     }
     
     #furioos_container,  #above-container  {
-      width: 75%;
+      width: 50%;
       height: 500px;
       position: absolute;
       top: 0;
-      left: 0;
+      left: 25%;
     }
 
     #above-container  {
-      background-color: rgba(0, 0, 0, 0.3);
+      background-color: rgba(146, 158, 159, 0.7);
       pointer-events: none;
     }
 
     .buttons-container {
       position: absolute;
-      top: 600px;
+      top: 520px;
       left: 0;
+      display: flex;
+      justify-content: center;
+      width: 100%;
+    }
+
+    .button {
+      background-color: black;
+      border: 2px solid white;
+      color: white;
+      border-radius: 15px;
+      margin: 0 5px;
+      padding: 6px 8px;
+      
+    }
+    .button:hover {
+      background-color: white;
+      color: black;
     }
 
   </style>
@@ -37,15 +57,15 @@
     <div class="main-container">
       <div id="furioos_container"></div>
       <div id="above-container"></div>
-      <div class="buttons-container">
-        <button id="button_start">Start session</button>
-        <button id="button_stop">Stop session</button>
-        <button id="button_restartStream">Restart stream</button>
-        <button id="button_setThumb">Set Thumbnail</button>
-        <button id="button_quality_auto">Quality Auto</button>
-        <button id="button_quality_low">Quality Low</button>
-        <button id="button_quality_medium">Quality Medium</button>
-        <button id="button_quality_high">Quality High</button>
+      <div class="buttons-container" class="button">
+        <button id="button_start" class="button">Start session</button>
+        <button id="button_stop" class="button">Stop session</button>
+        <button id="button_restartStream" class="button">Restart stream</button>
+        <button id="button_setThumb" class="button">Set Thumbnail</button>
+        <button id="button_quality_auto" class="button">Quality Auto</button>
+        <button id="button_quality_low" class="button">Quality Low</button>
+        <button id="button_quality_medium" class="button">Quality Medium</button>
+        <button id="button_quality_high" class="button">Quality High</button>
       </div>
     </div>
   </body>
