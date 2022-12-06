@@ -136,6 +136,7 @@ player.on(FS_SDK_EVENTS_NAME.ON_APP_START, function () {
 // Bind stream start
 player.on(FS_SDK_EVENTS_NAME.ON_STREAM_START, function () {
   console.log("SDK client FIRED: Stream start");
+  document.getElementById('above-container').hide();
 });
 
 // Bind user active
