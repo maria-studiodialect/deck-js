@@ -116,7 +116,7 @@ player.on(FS_SDK_EVENTS_NAME.ON_SDK_MESSAGE, function (data) {
 // Bind application install progress
 player.on(FS_SDK_EVENTS_NAME.ON_APP_INSTALL_PROGRESS, function (value) {
   console.log("SDK client FIRED: App install progress", value);
-  document.getElementById('loading').innerHTML = Math.round(value.progress * 100);
+  document.getElementById('loading').innerHTML = `${Math.round(value.progress * 100)}%` ;
 });
 
 // Bind application install success
