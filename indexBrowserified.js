@@ -66,7 +66,7 @@ document.getElementById('button_restartStream').addEventListener("click", () => 
 
 document.getElementById('button_setThumb').addEventListener("click", () => {
   console.log("Call setThumb");
-  player.setThumbnailUrl("https://images.unsplash.com/photo-1599499462686-3ed0badee8c3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=3302&q=80");
+  player.setThumbnailUrl("/thumbnail.png");
 });
 /*
 document.getElementById('button_getServerMetadata').addEventListener("click", () => {
