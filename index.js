@@ -8,7 +8,7 @@ const player = new Player(SHARED_LINK, 'furioos_container', {
   whiteLabel: true,
   hideTitle: true,
   hideToolbar: false,
-  hidePlayButton: true,
+  hidePlayButton: false,
   debugAppMode: false,
 });
 
