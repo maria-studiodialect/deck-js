@@ -13,7 +13,7 @@
       position: relative;
     }
     
-    #furioos_container,  #above_container  {
+    #furioos_container,  #above-container  {
       width: 75%;
       height: 500px;
       position: absolute;
@@ -21,8 +21,14 @@
       left: 0;
     }
 
-    #above_container  {
+    #above-container  {
       background-color: black;
+    }
+
+    .buttons-container {
+      position: absolute;
+      top: 500px;
+      left: 0;
     }
 
   </style>
@@ -30,14 +36,16 @@
     <div class="main-container">
       <div id="furioos_container"></div>
       <div id="above-container"></div>
-      <button id="button_start">Start session</button>
-      <button id="button_stop">Stop session</button>
-      <button id="button_restartStream">Restart stream</button>
-      <button id="button_setThumb">Set Thumbnail</button>
-      <button id="button_quality_auto">Quality Auto</button>
-      <button id="button_quality_low">Quality Low</button>
-      <button id="button_quality_medium">Quality Medium</button>
-      <button id="button_quality_high">Quality High</button>
+      <div class="buttons-container">
+        <button id="button_start">Start session</button>
+        <button id="button_stop">Stop session</button>
+        <button id="button_restartStream">Restart stream</button>
+        <button id="button_setThumb">Set Thumbnail</button>
+        <button id="button_quality_auto">Quality Auto</button>
+        <button id="button_quality_low">Quality Low</button>
+        <button id="button_quality_medium">Quality Medium</button>
+        <button id="button_quality_high">Quality High</button>
+      </div>
     </div>
   </body>
   <footer>
