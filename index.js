@@ -11,11 +11,12 @@ const player = new Player(SHARED_LINK, 'furioos_container', {
   hidePlayButton: false,
   debugAppMode: false,
 });
-
+/*
 document.getElementById('button_setUserActive').addEventListener("click", () => {
   console.log("Call setUserActive");
   player.setUserActive();
 });
+
 
 document.getElementById('button_maximize').addEventListener("click", () => {
   console.log("Call maximize");
@@ -26,6 +27,7 @@ document.getElementById('button_minimize').addEventListener("click", () => {
   console.log("Call minimize");
   player.minimize();
 });
+
 
 let value = 1;
 document.getElementById('button_sendSDKMessage').addEventListener("click", () => {
@@ -44,6 +46,7 @@ document.getElementById('button_getServerAvailability').addEventListener("click"
     console.log("ERROR getServerAvailability", error);
   });
 });
+*/
 
 document.getElementById('button_start').addEventListener("click", () => {
   console.log("Call start");
@@ -64,7 +67,7 @@ document.getElementById('button_setThumb').addEventListener("click", () => {
   console.log("Call setThumb");
   player.setThumbnailUrl("https://images.unsplash.com/photo-1599499462686-3ed0badee8c3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=3302&q=80");
 });
-
+/*
 document.getElementById('button_getServerMetadata').addEventListener("click", () => {
   console.log("Call getServerMetadata");
   player.getServerMetadata((data) => {
@@ -73,6 +76,7 @@ document.getElementById('button_getServerMetadata').addEventListener("click", ()
     console.log("ERROR getServerMetadata", error);
   });
 });
+*/
 
 document.getElementById('button_quality_auto').addEventListener("click", () => {
   player.setQuality(FS_QUALITY_VALUES.AUTO);
@@ -87,6 +91,7 @@ document.getElementById('button_quality_high').addEventListener("click", () => {
   player.setQuality(FS_QUALITY_VALUES.HIGH);
 });
 /*
+
 var slider = document.getElementById('volume_range');
 slider.oninput = function() {
   console.log('volume', this.value/100);
