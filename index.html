@@ -12,18 +12,19 @@
       margin: 0 auto;
     }
     
-    #furioos_container {
+    #furioos_container,  #above_container  {
       width: 75%;
       height: 500px;
+      position: fixed;
+      top: 0;
+      left: 0;
     }
 
-    .MuiButtonBase-root > div > img {
-      display: none;
-    }
   </style>
   <body>
     <div class="main-container">
       <div id="furioos_container"></div>
+      <div id="above-container"></div>
       <button id="button_start">Start session</button>
       <button id="button_stop">Stop session</button>
       <button id="button_restartStream">Restart stream</button>
