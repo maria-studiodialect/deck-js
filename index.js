@@ -8,7 +8,7 @@ const player = new Player(SHARED_LINK, 'furioos_container', {
   whiteLabel: true,
   hideTitle: true,
   hideToolbar: false,
-  hidePlayButton: false,
+  hidePlayButton: true,
   debugAppMode: false,
 });
 
@@ -86,12 +86,13 @@ document.getElementById('button_quality_medium').addEventListener("click", () =>
 document.getElementById('button_quality_high').addEventListener("click", () => {
   player.setQuality(FS_QUALITY_VALUES.HIGH);
 });
-
+/*
 var slider = document.getElementById('volume_range');
 slider.oninput = function() {
   console.log('volume', this.value/100);
   player.setVolume(this.value/100);
 }
+*/
 
 // EVENTS
 player.on(FS_SDK_EVENTS_NAME.LOAD, () => {
