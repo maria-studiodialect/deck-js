@@ -51,16 +51,20 @@ document.getElementById('button_getServerAvailability').addEventListener("click"
 document.getElementById('button_start').addEventListener("click", () => {
   console.log("Call start");
   player.start()
+  document.getElementById('loading').innerHTML = '0%'
 });
 
 document.getElementById('button_stop').addEventListener("click", () => {
   console.log("Call stop");
-  player.stop()
+  player.stop();
+  document.getElementById('above-container').style.display = 'block';
 });
 
 document.getElementById('button_restartStream').addEventListener("click", () => {
   console.log("Call restart stream");
   player.restartStream()
+  document.getElementById('above-container').style.display = 'block';
+  document.getElementById('loading').innerHTML = 'Restarting...'
 });
 /*
 document.getElementById('button_setThumb').addEventListener("click", () => {
@@ -106,7 +110,7 @@ player.on(FS_SDK_EVENTS_NAME.LOAD, () => {
 });
 
 player.on(FS_SDK_EVENTS_NAME.ON_STATS, (stats) => {
-  //console.log("SDK client FIRED: Stats received", stats);
+  console.log("SDK client FIRED: Stats received", stats);
 });
 
 // Bind SDK messages
@@ -123,6 +127,7 @@ player.on(FS_SDK_EVENTS_NAME.ON_APP_INSTALL_PROGRESS, function (value) {
 // Bind application install success
 player.on(FS_SDK_EVENTS_NAME.ON_APP_INSTALL_SUCCESS, function () {
   console.log("SDK client FIRED: App install success");
+  document.getElementById('loading').innerHTML = 'Launching...'
 });
 
 // Bind application install fail
