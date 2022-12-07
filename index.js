@@ -62,12 +62,12 @@ document.getElementById('button_restartStream').addEventListener("click", () => 
   console.log("Call restart stream");
   player.restartStream()
 });
-
+/*
 document.getElementById('button_setThumb').addEventListener("click", () => {
   console.log("Call setThumb");
   player.setThumbnailUrl("/thumbnail.png");
 });
-/*
+
 document.getElementById('button_getServerMetadata').addEventListener("click", () => {
   console.log("Call getServerMetadata");
   player.getServerMetadata((data) => {
@@ -76,7 +76,7 @@ document.getElementById('button_getServerMetadata').addEventListener("click", ()
     console.log("ERROR getServerMetadata", error);
   });
 });
-*/
+
 
 document.getElementById('button_quality_auto').addEventListener("click", () => {
   player.setQuality(FS_QUALITY_VALUES.AUTO);
@@ -90,6 +90,7 @@ document.getElementById('button_quality_medium').addEventListener("click", () =>
 document.getElementById('button_quality_high').addEventListener("click", () => {
   player.setQuality(FS_QUALITY_VALUES.HIGH);
 });
+*/
 /*
 
 var slider = document.getElementById('volume_range');
