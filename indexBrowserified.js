@@ -58,13 +58,14 @@ document.getElementById('button_start').addEventListener("click", () => {
 document.getElementById('button_stop').addEventListener("click", () => {
   console.log("Call stop");
   player.stop();
-  document.getElementById('above-container').style.display = 'block';
+  document.getElementById('above-container').style.display = 'flex';
+  document.getElementById('loading').innerHTML = 'Session Stopped'
 });
 
 document.getElementById('button_restartStream').addEventListener("click", () => {
   console.log("Call restart stream");
   player.restartStream()
-  document.getElementById('above-container').style.display = 'block';
+  document.getElementById('above-container').style.display = 'flex';
   document.getElementById('loading').innerHTML = 'Restarting...'
 });
 /*
@@ -144,12 +145,12 @@ player.on(FS_SDK_EVENTS_NAME.ON_APP_START, function () {
 // Bind stream start
 player.on(FS_SDK_EVENTS_NAME.ON_STREAM_START, function () {
   console.log("SDK client FIRED: Stream start");
-  document.getElementById('above-container').style.display = 'none';
 });
 
 // Bind user active
 player.on(FS_SDK_EVENTS_NAME.ON_USER_ACTIVE, function () {
   console.log("SDK client FIRED: User Active");
+  document.getElementById('above-container').style.display = 'none';
 });
 
 // Bind user inactive
