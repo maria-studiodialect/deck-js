@@ -30,7 +30,7 @@
       position: relative;
     }
     
-    #furioos_container,  #above-container  {
+    #furioos_container,  #above-container, #buttons-space  {
       width: 100%;
       height: 100vh;
       position: absolute;
@@ -81,7 +81,7 @@
     }
     #loading {
       color: #36110B;
-      font-size: 1.7em;
+      font-size: 2em;
       font-family: 'Sharp-Sans-Medium';
       margin-top: 10px;
     }
@@ -99,10 +99,11 @@
         </div>
         <div id="loading"></div>
       </div>
-      <div class="buttons-container" class="button">
+      <div id="buttons-space">
+        <div class="buttons-container" class="button">
         <button id="button_start" class="button"><i class="ri-play-fill"></i></button>
         <button id="button_stop" class="button"><i class="ri-stop-fill"></i></button>
-        <button id="button_restartStream" class="button" style="font-size: 1.6em;"><i class="ri-restart-fill"></i></button>
+        <button id="button_restartStream" class="button" style="font-size: 1.8em;"><i class="ri-restart-fill"></i></button>
         <!-- 
         <button id="button_setThumb" class="button">Set Thumbnail</button>
         <button id="button_quality_auto" class="button">Quality Auto</button>
@@ -111,6 +112,7 @@
         <button id="button_quality_high" class="button">Quality High</button>
         -->
       </div>
+    </div>
     </div>
   </body>
   <footer>
