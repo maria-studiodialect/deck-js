@@ -8,7 +8,7 @@ const SHARED_LINK = 'i25meLojPsyZcpw6Z'; // Set your shared link here
 const player = new Player(SHARED_LINK, 'furioos_container', {
   whiteLabel: true,
   hideTitle: true,
-  hideToolbar: false,
+  hideToolbar: true,
   hidePlayButton: true,
   debugAppMode: false,
 });

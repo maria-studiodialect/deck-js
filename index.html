@@ -51,13 +51,18 @@
 
     .buttons-container {
       position: absolute;
-      top: 10px;
-      left: 10px;
+      bottom: 2vh;
+      left: 0;
+      right: 0;
+      margin: 0 auto;
+      text-align: center;
       display: flex;
       justify-content: center;
       padding: 5px 15px;
-      background-color: #F5F1E8;
+      background-color: rgba(245, 241, 232, 1);
       border-radius: 15px;
+      backdrop-filter: blur(15px);
+      -webkit-backdrop-filter: blur(15px);
     }
 
     .button {
@@ -69,9 +74,6 @@
       background-color: transparent;
       border: 0px;
       font-size: 2em;
-      backdrop-filter: blur(15px);
-      -webkit-backdrop-filter: blur(15px);
-      opacity: 0.9;
     }
 
     .button:hover {
@@ -79,7 +81,7 @@
     }
     #loading {
       color: #36110B;
-      font-size: 1em;
+      font-size: 1.7em;
       font-family: 'Sharp-Sans-Medium';
       margin-top: 10px;
     }
@@ -100,7 +102,7 @@
       <div class="buttons-container" class="button">
         <button id="button_start" class="button"><i class="ri-play-fill"></i></button>
         <button id="button_stop" class="button"><i class="ri-stop-fill"></i></button>
-        <button id="button_restartStream" class="button" style="font-size: 1.8em;"><i class="ri-restart-fill"></i></button>
+        <button id="button_restartStream" class="button" style="font-size: 1.6em;"><i class="ri-restart-fill"></i></button>
         <!-- 
         <button id="button_setThumb" class="button">Set Thumbnail</button>
         <button id="button_quality_auto" class="button">Quality Auto</button>
