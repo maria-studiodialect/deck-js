@@ -86,6 +86,7 @@ document.getElementById('button_getServerMetadata').addEventListener("click", ()
 document.getElementById('button_quality_auto').addEventListener("click", () => {
   player.setQuality(FS_QUALITY_VALUES.AUTO);
 });
+*/
 document.getElementById('button_quality_low').addEventListener("click", () => {
   player.setQuality(FS_QUALITY_VALUES.LOW);
 });
@@ -95,7 +96,7 @@ document.getElementById('button_quality_medium').addEventListener("click", () =>
 document.getElementById('button_quality_high').addEventListener("click", () => {
   player.setQuality(FS_QUALITY_VALUES.HIGH);
 });
-*/
+
 /*
 
 var slider = document.getElementById('volume_range');
