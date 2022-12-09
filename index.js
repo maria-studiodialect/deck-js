@@ -169,4 +169,5 @@ player.on(FS_SDK_EVENTS_NAME.ON_CRASH_APP, (data) => {
 
 player.on(FS_SDK_EVENTS_NAME.ON_RESUME_SESSION, (data) => {
   console.warn("SDK client FIRED: session can be resumed", data);
+  console.log('can resume session');
 });
