@@ -87,23 +87,23 @@ document.getElementById('button_getServerMetadata').addEventListener("click", ()
 document.getElementById('button_quality_auto').addEventListener("click", () => {
   player.setQuality(FS_QUALITY_VALUES.AUTO);
   document.getElementById('button_quality_auto').classList.add('active');
-  document.querySelectorAll('#button_quality_low, #button_quality_medium, #button_quality_high').classList.remove('active');
+  document.querySelectorAll('#button_quality_low, #button_quality_medium, #button_quality_high').forEach(el => el.classList.remove('active'));
 });
 
 document.getElementById('button_quality_low').addEventListener("click", () => {
   player.setQuality(FS_QUALITY_VALUES.LOW);
   document.getElementById('button_quality_low').classList.add('active');
-  document.querySelectorAll('#button_quality_auto, #button_quality_medium, #button_quality_high').classList.remove('active');
+  document.querySelectorAll('#button_quality_auto, #button_quality_medium, #button_quality_high').forEach(el => el.classList.remove('active'));
 });
 document.getElementById('button_quality_medium').addEventListener("click", () => {
   player.setQuality(FS_QUALITY_VALUES.MEDIUM);
   document.getElementById('button_quality_medium').classList.add('active');
-  document.querySelectorAll('#button_quality_auto, #button_quality_low, #button_quality_high').classList.remove('active');
+  document.querySelectorAll('#button_quality_auto, #button_quality_low, #button_quality_high').forEach(el => el.classList.remove('active'));
 });
 document.getElementById('button_quality_high').addEventListener("click", () => {
   player.setQuality(FS_QUALITY_VALUES.HIGH);
   document.getElementById('button_quality_high').classList.add('active');
-  document.querySelectorAll('#button_quality_auto, #button_quality_medium, #button_quality_low').classList.remove('active');
+  document.querySelectorAll('#button_quality_auto, #button_quality_medium, #button_quality_low').forEach(el => el.classList.remove('active'));
 });
 
 /*
