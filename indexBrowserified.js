@@ -83,19 +83,27 @@ document.getElementById('button_getServerMetadata').addEventListener("click", ()
   });
 });
 
-
+*/
 document.getElementById('button_quality_auto').addEventListener("click", () => {
   player.setQuality(FS_QUALITY_VALUES.AUTO);
+  document.getElementById('button_quality_auto').classList.add('active');
+  document.querySelectorAll('#button_quality_low, #button_quality_medium, #button_quality_high').classList.remove('active');
 });
-*/
+
 document.getElementById('button_quality_low').addEventListener("click", () => {
   player.setQuality(FS_QUALITY_VALUES.LOW);
+  document.getElementById('button_quality_low').classList.add('active');
+  document.querySelectorAll('#button_quality_auto, #button_quality_medium, #button_quality_high').classList.remove('active');
 });
 document.getElementById('button_quality_medium').addEventListener("click", () => {
   player.setQuality(FS_QUALITY_VALUES.MEDIUM);
+  document.getElementById('button_quality_medium').classList.add('active');
+  document.querySelectorAll('#button_quality_auto, #button_quality_low, #button_quality_high').classList.remove('active');
 });
 document.getElementById('button_quality_high').addEventListener("click", () => {
   player.setQuality(FS_QUALITY_VALUES.HIGH);
+  document.getElementById('button_quality_high').classList.add('active');
+  document.querySelectorAll('#button_quality_auto, #button_quality_medium, #button_quality_low').classList.remove('active');
 });
 
 /*
@@ -162,6 +170,7 @@ player.on(FS_SDK_EVENTS_NAME.ON_USER_INACTIVE, function () {
 // Bind session stoppeds
 player.on(FS_SDK_EVENTS_NAME.ON_SESSION_STOPPED, function () {
   console.log("SDK client FIRED: Session Stopped");
+  document.getElementById('loading').innerHTML = 'The session has stopped. Please press play again.'
 });
 
 player.on(FS_SDK_EVENTS_NAME.ON_CRASH_APP, (data) => {
